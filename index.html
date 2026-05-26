@@ -1,0 +1,297 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Saugus Kaunas</title>
+  <link rel="icon" type="image/x-icon" href="img/logo.png">
+  <link rel="stylesheet" href="style.css"/>
+ 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/ionicons.min.css">
+		<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+  <!-- HEADER -->
+
+  <header class="header">
+    <div class="logo">
+      SAUGUS KAUNAS
+    </div>
+
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#about">Apie</a></li>
+        <li><a href="#maps">Žemėlapiai</a></li>
+        <li><a href="#community">Pasiūlymai</a></li>
+        <li><a href="#contacts">Kontaktai</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HERO SECTION -->
+
+  <section class="hero">
+
+    <div class="gate-container">
+
+      <div class="gate left-gate"><img src="img/vartai.jpg"></div>
+      <div class="gate right-gate"><img src="img/vartai.jpg"></div>
+
+      <div class="hero-overlay"></div>
+
+      <div class="hero-content">
+        <h1>KAUNO SAUGUMO INFRASTRUKTŪROS ANALIZĖ</h1>
+
+        <p>
+          Interaktyvi nusikalstamumo, rizikos zonų ir gyventojų
+          pasiūlymų analizės platforma.
+        </p>
+
+        <a href="#maps" class="hero-btn">
+          Peržiūrėti žemėlapius
+        </a>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ABOUT + ANALYTICS -->
+
+<section class="about-analytics" id="about">
+
+  <div class="section-title">
+    <h2>Apie projektą</h2>
+  </div>
+
+  <div class="about-analytics-wrapper">
+
+    <!-- LEFT SIDE -->
+
+    <div class="left-side">
+
+      <div class="about-text">
+
+        <p>
+          Projektas skirtas Kauno miesto saugumo infrastruktūros analizei,
+          nusikalstamumo rizikos vertinimui bei gyventojų įtraukimui
+          į saugesnės miesto aplinkos kūrimą.
+        </p>
+
+        <p>
+          Platformoje pateikiami interaktyvūs žemėlapiai,
+          pavojingų zonų analizė bei gyventojų pasiūlymai
+          dėl vartų, tvorų, apšvietimo ir stebėjimo kamerų įrengimo.
+        </p>
+
+        <p>
+          Tai demonstracinė svetainė, visas joje pateikiamas turinys yra skirtas
+          <strong><i>mokymo tikslams.</i></strong>
+        </p>
+
+      </div>
+
+      <!-- ANALYTIC CARDS -->
+
+      <div class="cards">
+
+        <div class="card">
+          <h3>Nusikalstamumas</h3>
+          <p>
+            Kriminalinių įvykių ir rizikos teritorijų analizė.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Rizikos zonos</h3>
+          <p>
+            Potencialiai nesaugios miesto vietos ir jų vertinimas.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Gyventojų pasiūlymai</h3>
+          <p>
+            Survey123 platformoje pateikti gyventojų pasiūlymai.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Saugumo infrastruktūra</h3>
+          <p>
+            Vartai, tvoros, apšvietimas ir vaizdo stebėjimas.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- RIGHT SIDE -->
+
+    <div class="right-side">
+
+      <img src="img/kaunas.jpg" alt="Kaunas">
+
+    </div>
+
+  </div>
+
+</section>
+
+  <!-- MAP SLIDER SECTION -->
+
+<section class="maps-showcase" id="maps">
+
+  <div class="maps-container">
+
+    <!-- LEFT -->
+
+    <div class="maps-info">
+
+      <h2 id="mapTitle">
+        3D Nusikalstamumo žemėlapis
+      </h2>
+
+      <p id="mapDescription">
+        Interaktyvus žemėlapis vaizduojantis nusikalstamumo
+        pasiskirstymą Kauno mieste.
+      </p>
+
+      <a id="mapButton" href="pages/map1.html">
+        Atidaryti žemėlapį
+      </a>
+
+    </div>
+
+    <!-- RIGHT -->
+
+    <div class="maps-preview">
+
+      <img
+        id="mapImage"
+        src="img/map_1.png"
+        alt="Map Preview"
+      >
+
+      <div class="slider-controls">
+
+  <!-- DOTS -->
+
+  <div class="slider-dots">
+
+    <span class="dot active" onclick="goToMap(0)"></span>
+    <span class="dot" onclick="goToMap(1)"></span>
+    <span class="dot" onclick="goToMap(2)"></span>
+    <span class="dot" onclick="goToMap(3)"></span>
+
+  </div>
+
+  <!-- ARROWS -->
+
+  <div class="slider-buttons">
+
+    <button onclick="prevMap()">←</button>
+    <button onclick="nextMap()">→</button>
+
+  </div>
+
+    </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+  <!-- COMMUNITY -->
+
+  <section class="community" id="community">
+
+    <div class="community-box">
+
+      <h2>Prisidėkite prie saugesnio Kauno kūrimo</h2>
+
+      <p>
+        Pateikite savo pasiūlymą dėl saugumo infrastruktūros gerinimo.
+      </p>
+
+      <a id="mapButton" href="pages/map5.html">
+        Pateikti pasiūlymą
+      </a>
+
+        <div class="maps-preview">
+
+        <img
+            id="mapImage"
+            src="img/map_5.png"
+            alt="Map Preview">
+        </div>
+    </div>
+
+
+  </section>
+
+  <!-- FOOTER -->
+
+  		<footer class="footer-04" id="contacts">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 col-lg-3 mb-md-0 mb-4">
+						<h2 class="footer-heading">Kauno GIS portalas</h2>
+						<p>Vilniaus universiteto IT ir GIS studijų projektas. 
+              Interaktyvūs žemėlapiai skirti Kauno miesto ir rajono erdvinių duomenų vizualizavimui ir analizei.</p>
+					</div>
+					<div class="col-md-6 col-lg-3 mb-md-0 mb-4">
+						<h2 class="footer-heading">Žemėlapiai</h2>
+						<ul class="list-unstyled">
+              <li><a href="pages/map1.html" class="py-1 d-block">3D Nusikalstamumas</a></li>
+              <li><a href="pages/map2.html" class="py-1 d-block">Laiko analizės žemėlapis</a></li>
+              <li><a href="pages/map3.html" class="py-1 d-block">2 rodiklių žemėlapis</a></li>
+              <li><a href="pages/map4.html" class="py-1 d-block">Saugumo poreikių žemėlapis</a></li>
+              <li><a href="pages/map5.html" class="py-1 d-block">Jūsų indėlis</a></li>
+            </ul>
+					</div>
+					<div class="col-md-6 col-lg-3 mb-md-0 mb-4">
+						<h2 class="footer-heading">Nuorodos</h2>
+						<div class="tagcloud">
+	            <a href="http://geoportal.lt" class="tag-cloud-link">geoportal.lt</a>
+	            <a href="https://www.vu.lt" class="tag-cloud-link">VU</a>
+	            <a href="https://www.kaunas.lt/" class="tag-cloud-link">Kauno meisto savivaldybė</a>
+	            <a href="https://www.tvorumeistras.lt/" class="tag-cloud-link">tvorų meistras (Vilnius)</a>
+	            <a href="https://www.manotvora.lt/" class="tag-cloud-link">mano tvora (Kaunas)</a>
+	          </div>
+					</div>
+					<div class="col-md-6 col-lg-3 mb-md-0 mb-4">
+						<h2 class="footer-heading">Kontaktai</h2>
+						<form action="#" class="subscribe-form">
+              <div class="form-group d-flex">
+                <a id="mapButton" href="pages/contacts.html">
+                  Susisiekite su mumis
+                </a>
+              </div>
+            </form>
+					</div>
+				</div>
+			</div>
+
+		</footer>
+
+		
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
